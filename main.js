@@ -1,6 +1,5 @@
 // Functionality to show projects in batches
 document.addEventListener('DOMContentLoaded', () => {
-    // === Project Show/Hide Functionality ===
     const projectCards = document.querySelectorAll('.project-card');
     const showMoreBtn = document.getElementById('show-more-btn');
     const hideBtn = document.getElementById('hide-btn');
@@ -49,21 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
         hideBtn.addEventListener('click', hideProjects);
     }
 
-    // === Dark/Light Mode Toggle Functionality ===
-    const chk = document.getElementById('chk');
-
-    chk.addEventListener('change', () => {
-        document.body.classList.toggle('dark');
-    });
-
-    // === Mobile Menu Toggle Functionality ===
+    // New JavaScript for the mobile menu toggle
     const navToggle = document.getElementById('nav-toggle');
     const navContent = document.getElementById('nav-content');
+    
+    navToggle.addEventListener('click', () => {
+        navContent.classList.toggle('hidden');
+    });
 
-    if (navToggle && navContent) {
-        navToggle.addEventListener('click', () => {
-            navContent.classList.toggle('hidden');
+    // Optional: Hide the menu when a link is clicked
+    const navLinks = document.querySelectorAll('#nav-content a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (!navContent.classList.contains('lg:flex')) {
+                navContent.classList.add('hidden');
+            }
         });
-    }
+    });
 });
-
