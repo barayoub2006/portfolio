@@ -10,18 +10,20 @@
 </head>
 <body>
     <nav class="fixed w-full z-10 top-4 flex justify-center">
-        <div class="container mx-auto max-w-lg p-2 glassy-nav flex justify-center items-center px-6">
-            <!-- Toggle Switch for Dark/Light Mode -->
+        <div class="container mx-auto max-w-lg p-2 glassy-nav flex justify-between items-center px-6">
             <div class="toggle-switch">
                 <input type="checkbox" class="checkbox" id="chk">
                 <label for="chk" class="label">
                     <div class="ball"></div>
                 </label>
             </div>
-            <!-- ... rest of your navigation content ... -->
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:flex" id="nav-content">
+            <button id="nav-toggle" class="flex lg:hidden items-center text-gray-200 hover:text-teal-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <div class="hidden lg:flex lg:items-center lg:w-auto" id="nav-content">
                 <ul class="text-lg lg:flex-grow lg:flex lg:justify-center w-full">
-                    <!-- روابط التنقل -->
                     <li><a href="#hero" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الرئيسية</a></li>
                     <li><a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الخبرة والتعليم</a></li>
                     <li><a href="#certifications" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الشهادات</a></li>
@@ -33,7 +35,6 @@
         </div>
     </nav>
 
-    <!-- Header Section -->
     <header id="hero" class="relative bg-gradient-to-br from-gray-900 to-indigo-900 text-white py-24 md:py-32 flex items-center justify-center min-h-screen overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://images.unsplash.com/photo-1518770660439-466a9c173775?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;"></div>
         <div class="container mx-auto text-center px-4 relative z-10 animate-fade-in">
@@ -59,8 +60,6 @@
         </div>
     </header>
 
-    <!-- ... rest of your body content ... -->
-    
     <section id="about" class="py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gradient">الاهتمامات والخبرة</h2>
@@ -433,7 +432,6 @@
                     </div>
                 </div>
 
-                <!-- === مشروع جديد: Smart Game === -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=Game" alt="صورة مشروع لعبة ذكية" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -453,7 +451,6 @@
                     </div>
                 </div>
                 
-                <!-- === NEW PROJECT 1: WEATHER APP === -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop" alt="صورة مشروع تطبيق الطقس" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -474,7 +471,6 @@
                     </div>
                 </div>
 
-                <!-- === NEW PROJECT 2: VIDEO DOWNLOADER === -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop" alt="صورة مشروع أداة تحميل الفيديو" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -623,8 +619,6 @@
     <script src="main.js"></script>
 </body>
 </html>
-
-
 
 
 
