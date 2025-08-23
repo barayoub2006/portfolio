@@ -8,33 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased">
-    <style>
-        .card-number {
-            position: absolute;
-            top: 0.5rem;
-            left: 0.5rem;
-            background-color: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-weight: bold;
-            color: #fff;
-            font-size: 1.2rem;
-            z-index: 10;
-        }
-    </style>
+<body>
     <nav class="fixed w-full z-10 top-4 flex justify-center">
-        <div class="container mx-auto max-w-lg p-2 glassy-nav flex justify-between items-center px-6">
-            <!-- Mobile Toggle Button -->
-            <div class="block lg:hidden">
-                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-teal-400 border-teal-400 hover:text-teal-200 hover:border-teal-200">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>القائمة</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z"/></svg>
-                </button>
+        <div class="container mx-auto max-w-lg p-2 glassy-nav flex justify-center items-center px-6">
+            <!-- Toggle Switch for Dark/Light Mode -->
+            <div class="toggle-switch">
+                <input type="checkbox" class="checkbox" id="chk">
+                <label for="chk" class="label">
+                    <div class="ball"></div>
+                </label>
             </div>
-            <!-- Navigation Links -->
+            <!-- ... rest of your navigation content ... -->
             <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:flex" id="nav-content">
                 <ul class="text-lg lg:flex-grow lg:flex lg:justify-center w-full">
+                    <!-- روابط التنقل -->
                     <li><a href="#hero" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الرئيسية</a></li>
                     <li><a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الخبرة والتعليم</a></li>
                     <li><a href="#certifications" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الشهادات</a></li>
@@ -46,6 +33,7 @@
         </div>
     </nav>
 
+    <!-- Header Section -->
     <header id="hero" class="relative bg-gradient-to-br from-gray-900 to-indigo-900 text-white py-24 md:py-32 flex items-center justify-center min-h-screen overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://images.unsplash.com/photo-1518770660439-466a9c173775?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;"></div>
         <div class="container mx-auto text-center px-4 relative z-10 animate-fade-in">
@@ -71,6 +59,8 @@
         </div>
     </header>
 
+    <!-- ... rest of your body content ... -->
+    
     <section id="about" class="py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gradient">الاهتمامات والخبرة</h2>
@@ -86,20 +76,6 @@
                         <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">CSS</span>
                         <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">JavaScript</span>
                         <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">PHP</span>
-                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">UI/UX Design</span>
-                    </div>
-                </div>
-                <div class="glassy-card p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <svg class="w-16 h-16 mx-auto mb-4 icon-data-science" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-2h2v2zm0-4H9V7h2v6zm4 4h-2v-6h2v6z"/>
-                    </svg>
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-100">علوم البيانات</h3>
-                    <p class="text-gray-300 mb-4">أركز على التعلم الذاتي في تحليل سلوك المستخدمين والتنبؤ باحتياجاتهم لإنشاء تجارب رقمية مخصصة.</p>
-                    <div class="flex flex-wrap justify-center gap-2 text-sm">
-                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Python</span>
-                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">تحليل البيانات</span>
-                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">التعلم الآلي</span>
-                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">قواعد البيانات</span>
                     </div>
                 </div>
             </div>
@@ -152,8 +128,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gradient">الشهادات</h2>
             <div class="max-w-3xl mx-auto space-y-8">
-                <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse relative">
-                    <div class="card-number">1</div>
+                <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
                     <img src="hardware.png" alt="شعار شهادة Cisco - Computer Hardware Basics" class="w-12 h-12 flex-shrink-0 mt-1">
                     <div>
                         <h3 class="text-2xl font-semibold text-gray-100">أساسيات عتاد الحاسوب</h3>
@@ -174,8 +149,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse relative">
-                    <div class="card-number">2</div>
+                <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
                     <img src="operating-systems-basics.png" alt="شعار شهادة Cisco - Operating Systems Basics" class="w-12 h-12 flex-shrink-0 mt-1">
                     <div>
                         <h3 class="text-2xl font-semibold text-gray-100">أساسيات أنظمة التشغيل</h3>
@@ -250,11 +224,9 @@
     <section id="portfolio" class="py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gradient">المشاريع</h2>
-            <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">1</div>
-                    <img src="https://barayoub2006.github.io/algeria/images/hero.png" alt="صورة مشروع دليل الأماكن السياحية" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=1" alt="صورة مشروع دليل الأماكن السياحية" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">دليل الأماكن السياحية في الجزائر</h3>
                         <p class="text-gray-300 mb-4 text-sm">موقع يعرض أبرز الأماكن في كل ولاية جزائرية (48 ولاية).</p>
@@ -271,10 +243,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">2</div>
-                    <img src="https://barayoub2006.github.io/photograph/img/hero-image.jpg" alt="صورة مشروع تصوير" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=2" alt="صورة مشروع تصوير" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">موقع تصوير (Photography)</h3>
                         <p class="text-gray-300 mb-4 text-sm">موقع يعرض صورًا لأماكن مشهورة في إفريقيا.</p>
@@ -291,10 +261,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 3 -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">3</div>
-                    <img src="https://barayoub2006.github.io/one-page/images/about.jpg" alt="صورة مشروع صفحة واحدة" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=3" alt="صورة مشروع صفحة واحدة" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">موقع تصوير (صفحة واحدة)</h3>
                         <p class="text-gray-300 mb-4 text-sm">نسخة من موقع التصوير بتصميم صفحة واحدة.</p>
@@ -311,10 +279,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 4 -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">4</div>
-                    <img src="https://barayoub2006.github.io/restaurant/images/hero-bg.jpg" alt="صورة مشروع مطعم" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=4" alt="صورة مشروع مطعم" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">موقع مطعم (Food Lover)</h3>
                         <p class="text-gray-300 mb-4 text-sm">موقع لمطعم "Food Lover" يعرض قائمة الطعام ومعرض الصور.</p>
@@ -331,10 +297,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 5 -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">5</div>
-                    <img src="https://barayoub2006.github.io/les-animes/images/hero-bg.png" alt="صورة مشروع أنمي" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=5" alt="صورة مشروع أنمي" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">عالم الأنمي (AnimeWorld)</h3>
                         <p class="text-gray-300 mb-4 text-sm">موقع لاستكشاف شخصيات الأنمي المفضلة لديك وتفاصيلها.</p>
@@ -351,10 +315,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 6 -->
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">6</div>
-                    <img src="https://barayoub2006.github.io/hwayjcar/images/hero-bg.jpg" alt="صورة مشروع سيارات" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=6" alt="صورة مشروع سيارات" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">منصة تأجير وبيع السيارات (DzDrive)</h3>
                         <p class="text-gray-300 mb-4 text-sm">موقع يجمع ميزات منصات البيع والتأجير، مع دراسة تحديات تنفيذ بوابات الدفع الإلكتروني.</p>
@@ -373,8 +335,7 @@
                 </div>
 
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">7</div>
-                    <img src="https://barayoub2006.github.io/landing-page/images/hero-bg.jpg" alt="صورة مشروع صفحة هبوط" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=7" alt="صورة مشروع صفحة هبوط" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">صفحة هبوط لخدمة رقمية</h3>
                         <p class="text-gray-300 mb-4 text-sm">صفحة ويب واحدة ترويجية مصممة لعرض خدمات رقمية بأسلوب عصري.</p>
@@ -393,8 +354,7 @@
                 </div>
                 
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">8</div>
-                    <img src="https://barayoub2006.github.io/Color-Generator/images/palette-hero.png" alt="صورة مشروع مولد الألوان" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=8" alt="صورة مشروع مولد الألوان" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">مولد الألوان</h3>
                         <p class="text-gray-300 mb-4 text-sm">تطبيق ويب بسيط يولد لوحات ألوان عشوائية ومتناسقة.</p>
@@ -413,8 +373,7 @@
                 </div>
 
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">9</div>
-                    <img src="https://barayoub2006.github.io/To-Do-List/images/todo-list-hero.png" alt="صورة مشروع قائمة المهام" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=9" alt="صورة مشروع قائمة المهام" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">قائمة المهام (To-Do List)</h3>
                         <p class="text-gray-300 mb-4 text-sm">تطبيق ويب بسيط لإدارة المهام اليومية باستخدام Local Storage.</p>
@@ -433,8 +392,7 @@
                 </div>
 
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">10</div>
-                    <img src="https://barayoub2006.github.io/Unit-Converter-Tool/images/unit-converter-hero.png" alt="صورة مشروع محول الوحدات" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=10" alt="صورة مشروع محول الوحدات" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">محول الوحدات (Unit Converter)</h3>
                         <p class="text-gray-300 mb-4 text-sm">أداة ويب لتحويل أكثر من 40 نوعًا من الوحدات المختلفة.</p>
@@ -453,8 +411,7 @@
                 </div>
                 
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
-                    <div class="card-number">11</div>
-                    <img src="https://placehold.co/600x400/3a3a5a/e2e8f0?text=منصة+تعليمية" alt="صورة مشروع منصة المنارة التعليمية" class="w-full h-48 object-cover">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=11" alt="صورة مشروع منصة المنارة التعليمية" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2 text-gray-100">منصة المنارة التعليمية (Minassa)</h3>
                         <p class="text-gray-300 mb-4 text-sm">منصة ويب ديناميكية شاملة لإدارة المحتوى التعليمي للمراحل الدراسية المختلفة. تتضمن لوحة تحكم للمسؤولين ونظام إدارة المستخدمين والمستويات والمواد.</p>
@@ -475,12 +432,82 @@
                             </div>
                     </div>
                 </div>
+
+                <!-- === مشروع جديد: Smart Game === -->
+                <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
+                    <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=Game" alt="صورة مشروع لعبة ذكية" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">لعبة ذكية (Smart Game)</h3>
+                        <p class="text-gray-300 mb-4 text-sm">لعبة ويب بسيطة وممتعة تعتمد على المنطق.</p>
+                        <div class="flex flex-wrap gap-2 text-xs mb-4">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="flex justify-center items-center text-sm">
+                            <a href="https://barayoub2006.github.io/game-smart/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                                عرض
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- === NEW PROJECT 1: WEATHER APP === -->
+                <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
+                    <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop" alt="صورة مشروع تطبيق الطقس" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">تطبيق الطقس</h3>
+                        <p class="text-gray-300 mb-4 text-sm">تطبيق ويب لعرض حالة الطقس لأي مدينة في العالم، مع توقعات لخمسة أيام قادمة.</p>
+                        <div class="flex flex-wrap gap-2 text-xs mb-4">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">Tailwind CSS</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">API</span>
+                        </div>
+                        <div class="flex justify-center items-center text-sm">
+                            <a href="https://barayoub2006.github.io/weather/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                                عرض
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === NEW PROJECT 2: VIDEO DOWNLOADER === -->
+                <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
+                    <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop" alt="صورة مشروع أداة تحميل الفيديو" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">أداة تحميل الفيديو</h3>
+                        <p class="text-gray-300 mb-4 text-sm">أداة لتحميل الفيديوهات من يوتيوب، تيك توك، وغيرها. المشروع يستخدم واجهة أمامية وخادم خلفي.</p>
+                        <div class="bg-yellow-900/50 border border-yellow-700 text-yellow-200 text-xs p-2 rounded-lg mb-4">
+                            <p><strong class="font-bold">ملاحظة:</strong> يجب تشغيل الخادم أولاً. اضغط على رابط الخادم وانتظر 30 ثانية، ثم افتح رابط المشروع.</p>
+                            <a href="https://vedio-downloader.onrender.com/" target="_blank" class="text-teal-400 hover:underline mt-1 block">1. اضغط هنا لتشغيل الخادم</a>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs mb-4">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">Tailwind CSS</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">Node.js</span>
+                        </div>
+                        <div class="flex justify-center items-center text-sm">
+                            <a href="https://barayoub2006.github.io/vedio-downloader/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                                2. عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="text-center mt-12">
-                <button class="bg-gray-700 text-white hover:bg-gray-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-                    عرض المزيد من المشاريع
-                </button>
-            </div>
+<div class="flex justify-center mt-12 space-x-4 rtl:space-x-reverse" id="project-buttons">
+    <button id="show-more-btn" class="bg-gray-700 text-white hover:bg-gray-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+        عرض المزيد من المشاريع
+    </button>
+    <button id="hide-btn" class="bg-red-700 text-white hover:bg-red-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 hidden">
+        إخفاء المشاريع
+    </button>
+</div>
         </div>
     </section>
 
@@ -593,11 +620,9 @@
             </div>
         </div>
     </footer>
-
     <script src="main.js"></script>
 </body>
 </html>
-
 
 
 
