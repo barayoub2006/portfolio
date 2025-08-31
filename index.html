@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محفظتي الاحترافية - أيوب بارور</title>
+    <title data-i18n="title">محفظتي الاحترافية - أيوب بارور</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -24,12 +24,12 @@
             </button>
             <div class="hidden lg:flex lg:items-center lg:w-auto" id="nav-content">
                 <ul class="text-lg lg:flex-grow lg:flex lg:justify-center w-full">
-                    <li><a href="#hero" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الرئيسية</a></li>
-                    <li><a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الخبرة والتعليم</a></li>
-                    <li><a href="#certifications" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">الشهادات</a></li>
-                    <li><a href="#skills" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">المهارات</a></li>
-                    <li><a href="#portfolio" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">المشاريع</a></li>
-                    <li><a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300">اتصل بي</a></li>
+                    <li><a href="#hero" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300" data-i18n="nav-home">الرئيسية</a></li>
+                    <li><a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300" data-i18n="nav-about">الخبرة والتعليم</a></li>
+                    <li><a href="#certifications" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300" data-i18n="nav-certifications">الشهادات</a></li>
+                    <li><a href="#skills" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300" data-i18n="nav-skills">المهارات</a></li>
+                    <li><a href="#portfolio" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300" data-i18n="nav-portfolio">المشاريع</a></li>
+                    <li><a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-teal-400 mx-4 py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300" data-i18n="nav-contact">اتصل بي</a></li>
                 </ul>
             </div>
         </div>
@@ -39,37 +39,37 @@
         <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://images.unsplash.com/photo-1518770660439-466a9c173775?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;"></div>
         <div class="container mx-auto text-center px-4 relative z-10 animate-fade-in">
             <img src="1753375298967.jpg" alt="صورة الملف الشخصي لأيوب بارور" class="rounded-full border-4 border-teal-400 mx-auto mb-6 shadow-xl w-48 h-48 object-cover">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-2 text-center w-full">
+            <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold leading-tight mb-2 text-center w-full" data-i18n="hero-title">
                 مرحباً بالعالم! أنا <span class="text-gradient">أيوب بارور</span>
             </h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-300 text-center w-full">
+            <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 text-gray-300 text-center w-full" data-i18n="hero-subtitle">
                 طالب هندسة إعلام آلي، أطمح للعمل في مجال علوم البيانات وتطوير الويب.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                <a href="#contact" class="inline-block bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                <a href="#contact" class="inline-block bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-i18n="contact-me">
                     اتصل بي
                 </a>
-                <a href="cvayoub.docx" download="cvayoub.docx" class="inline-block bg-gray-700 text-white hover:bg-gray-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                <a href="cvayoub.docx" download="cvayoub.docx" class="inline-block bg-gray-700 text-white hover:bg-gray-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-i18n="download-cv">
                     تحميل السيرة الذاتية
                 </a>
             </div>
             <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-                <p class="text-sm">تصفح</p>
+                <p class="text-sm" data-i18n="browse">تصفح</p>
             </div>
         </div>
     </header>
 
     <section id="about" class="py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">الاهتمامات والخبرة</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient" data-i18n="about-title">الاهتمامات والخبرة</h2>
             <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                 <div class="glassy-card p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
                     <svg class="w-16 h-16 mx-auto mb-4 icon-web-dev" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2L2 12l10 10 10-10L12 2zm0 14.5L6.5 12 12 7.5 17.5 12 12 16.5z"/>
                     </svg>
-                    <h3 class="text-2xl font-semibold mb-2 text-gray-100">تطوير الويب</h3>
-                    <p class="text-gray-300 mb-4">أبني تطبيقات ويب سريعة، بسيطة، وسهلة الصيانة. أكتب كود نظيف وأستخدم أدوات أثق بها.</p>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="web-dev-title">تطوير الويب</h3>
+                    <p class="text-gray-300 mb-4" data-i18n="web-dev-desc">أبني تطبيقات ويب سريعة، بسيطة، وسهلة الصيانة. أكتب كود نظيف وأستخدم أدوات أثق بها.</p>
                     <div class="flex flex-wrap justify-center gap-2 text-sm">
                         <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">HTML</span>
                         <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">CSS</span>
@@ -79,14 +79,14 @@
                 </div>
             </div>
 
-            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">الخبرة والتعليم</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient" data-i18n="experience-title">الخبرة والتعليم</h2>
             <div class="max-w-3xl mx-auto space-y-8">
                 <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
                     <svg class="w-8 h-8 text-teal-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.31L19.07 7 12 10.69 4.93 7 12 4.31zM4 9l8 4 8-4v8l-8 4-8-4V9z"/>
                     </svg>
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-100">طالب هندسة إعلام آلي</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100" data-i18n="student">طالب هندسة إعلام آلي</h3>
                         <p class="text-gray-400">جامعة قسنطينة 2</p>
                         <p class="text-gray-500 text-sm">سبتمبر 2024 - متوقع 2029</p>
                         <p class="text-gray-300 mt-2">
@@ -99,7 +99,7 @@
                         <path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v2H8V8zm0 4h8v2H8v-2zm0 4h8v2H8v-2z"/>
                     </svg>
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-100">باكلوريا علوم تجريبية</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100" data-i18n="baccalaureate">باكلوريا علوم تجريبية</h3>
                         <p class="text-gray-400">ثانوية ابن باديس قسنطينة</p>
                         <p class="text-gray-500 text-sm">2024 - بمعدل 14.77</p>
                         <p class="text-gray-300 mt-2">
@@ -112,7 +112,7 @@
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-2h2v2zm0-4H9V7h2v6zm4 4h-2v-6h2v6z"/>
                     </svg>
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-100">التعلم الذاتي في تطوير الويب</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100" data-i18n="self-learning">التعلم الذاتي في تطوير الويب</h3>
                         <p class="text-gray-400">تطوير شخصي - مستمر</p>
                         <p class="text-gray-300 mt-2">
                             درست لغات وتقنيات تطوير الويب مثل HTML، CSS، JavaScript، و PHP بشكل مستقل من خلال منصات مثل YouTube و Udemy.
@@ -125,12 +125,35 @@
 
     <section id="certifications" class="py-16 md:py-24 bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">الشهادات</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient" data-i18n="certifications-title">الشهادات</h2>
             <div class="max-w-3xl mx-auto space-y-8">
+                <!-- New Certification: Introduction to Cybersecurity -->
+                <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
+                    <img src="introduction-to-cybersecurity.png" alt="شعار شهادة Cisco - Introduction to Cybersecurity" class="w-12 h-12 flex-shrink-0 mt-1">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-100" data-i18n="cybersecurity-title">مقدمة في الأمن السيبراني</h3>
+                        <p class="text-gray-400">أكاديمية Cisco للشبكات</p>
+                        <p class="text-gray-500 text-sm">تاريخ الإصدار: 31 أغسطس 2025</p>
+                        <p class="text-gray-300 mt-2">
+                            أنهيت بنجاح دورة "Introduction to Cybersecurity". أصبحت قادراً على:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
+                            <li>شرح التهديدات، والثغرات، والهجمات، وتخفيف المخاطر.</li>
+                            <li>تطبيق أساسيات الحماية للمؤسسات.</li>
+                            <li>وصف مبادئ ومكونات الأمن السيبراني.</li>
+                            <li>شرح كيفية حماية البيانات والخصوصية عبر الإنترنت.</li>
+                            <li>تحديد معايير السلامة العامة والسلامة من الحرائق.</li>
+                        </ul>
+                        <a href="introcybersecurity.pdf" target="_blank" class="text-teal-400 hover:text-teal-200 mt-4 inline-block font-medium" data-i18n="watch-certificate">
+                            مشاهدة الشهادة
+                        </a>
+                    </div>
+                </div>
+
                 <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
                     <img src="hardware.png" alt="شعار شهادة Cisco - Computer Hardware Basics" class="w-12 h-12 flex-shrink-0 mt-1">
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-100">أساسيات عتاد الحاسوب</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100" data-i18n="hardware-title">أساسيات عتاد الحاسوب</h3>
                         <p class="text-gray-400">أكاديمية Cisco للشبكات</p>
                         <p class="text-gray-500 text-sm">تاريخ الإصدار: 31 يوليو 2025</p>
                         <p class="text-gray-300 mt-2">
@@ -143,7 +166,7 @@
                             <li>شرح ميزات ووظائف الأجهزة المحمولة.</li>
                             <li>تحديد معايير السلامة العامة والسلامة من الحرائق.</li>
                         </ul>
-                        <a href="cisco.pdf" target="_blank" class="text-teal-400 hover:text-teal-200 mt-4 inline-block font-medium">
+                        <a href="cisco.pdf" target="_blank" class="text-teal-400 hover:text-teal-200 mt-4 inline-block font-medium" data-i18n="watch-certificate">
                             مشاهدة الشهادة
                         </a>
                     </div>
@@ -151,7 +174,7 @@
                 <div class="glassy-card p-6 rounded-xl shadow-lg flex items-start space-x-4 rtl:space-x-reverse">
                     <img src="operating-systems-basics.png" alt="شعار شهادة Cisco - Operating Systems Basics" class="w-12 h-12 flex-shrink-0 mt-1">
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-100">أساسيات أنظمة التشغيل</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100" data-i18n="os-basics-title">أساسيات أنظمة التشغيل</h3>
                         <p class="text-gray-400">أكاديمية Cisco للشبكات</p>
                         <p class="text-gray-500 text-sm">تاريخ الإصدار: 05 أغسطس 2025</p>
                         <p class="text-gray-300 mt-2">
@@ -165,7 +188,7 @@
                             <li>شرح كيفية إعداد الاتصال بالشبكة والبريد الإلكتروني على الأجهزة المحمولة.</li>
                             <li>شرح خصائص أنظمة تشغيل الأجهزة المحمولة.</li>
                         </ul>
-                        <a href="operating%20system.pdf" target="_blank" class="text-teal-400 hover:text-teal-200 mt-4 inline-block font-medium">
+                        <a href="operating%20system.pdf" target="_blank" class="text-teal-400 hover:text-teal-200 mt-4 inline-block font-medium" data-i18n="watch-certificate">
                             مشاهدة الشهادة
                         </a>
                     </div>
@@ -176,11 +199,11 @@
 
     <section id="skills" class="py-16 md:py-24 bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-4 text-gradient">المهارات والتقنيات</h2>
-            <p class="text-lg text-center mb-12 text-gray-400">التقنيات التي أعمل بها لتحويل الأفكار إلى واقع.</p>
+            <h2 class="text-4xl font-bold text-center mb-4 text-gradient" data-i18n="skills-title">المهارات والتقنيات</h2>
+            <p class="text-lg text-center mb-12 text-gray-400" data-i18n="skills-subtitle">التقنيات التي أعمل بها لتحويل الأفكار إلى واقع.</p>
 
             <div class="flex justify-center flex-wrap gap-4 mb-12">
-                <button class="bg-teal-600 text-white py-2 px-6 rounded-full hover:bg-teal-700 transition duration-300">الكل</button>
+                <button class="bg-teal-600 text-white py-2 px-6 rounded-full hover:bg-teal-700 transition duration-300" data-i18n="all">الكل</button>
             </div>
 
             <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
@@ -222,20 +245,20 @@
 
     <section id="portfolio" class="py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">المشاريع</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient" data-i18n="projects-title">المشاريع</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=1" alt="صورة مشروع دليل الأماكن السياحية" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">دليل الأماكن السياحية في الجزائر</h3>
-                        <p class="text-gray-300 mb-4 text-sm">موقع يعرض أبرز الأماكن في كل ولاية جزائرية (48 ولاية).</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project1-title">دليل الأماكن السياحية في الجزائر</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project1-desc">موقع يعرض أبرز الأماكن في كل ولاية جزائرية (48 ولاية).</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/algeria/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/algeria/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -245,15 +268,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=2" alt="صورة مشروع تصوير" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">موقع تصوير (Photography)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">موقع يعرض صورًا لأماكن مشهورة في إفريقيا.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project2-title">موقع تصوير (Photography)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project2-desc">موقع يعرض صورًا لأماكن مشهورة في إفريقيا.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/photograph/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/photograph/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -263,15 +286,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=3" alt="صورة مشروع صفحة واحدة" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">موقع تصوير (صفحة واحدة)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">نسخة من موقع التصوير بتصميم صفحة واحدة.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project3-title">موقع تصوير (صفحة واحدة)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project3-desc">نسخة من موقع التصوير بتصميم صفحة واحدة.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/one-page/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/one-page/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -281,15 +304,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=4" alt="صورة مشروع مطعم" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">موقع مطعم (Food Lover)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">موقع لمطعم "Food Lover" يعرض قائمة الطعام ومعرض الصور.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project4-title">موقع مطعم (Food Lover)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project4-desc">موقع لمطعم "Food Lover" يعرض قائمة الطعام ومعرض الصور.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/restaurant/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/restaurant/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -299,15 +322,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=5" alt="صورة مشروع أنمي" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">عالم الأنمي (AnimeWorld)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">موقع لاستكشاف شخصيات الأنمي المفضلة لديك وتفاصيلها.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project5-title">عالم الأنمي (AnimeWorld)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project5-desc">موقع لاستكشاف شخصيات الأنمي المفضلة لديك وتفاصيلها.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/les-animes/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/les-animes/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -317,15 +340,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=6" alt="صورة مشروع سيارات" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">منصة تأجير وبيع السيارات (DzDrive)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">موقع يجمع ميزات منصات البيع والتأجير، مع دراسة تحديات تنفيذ بوابات الدفع الإلكتروني.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project6-title">منصة تأجير وبيع السيارات (DzDrive)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project6-desc">موقع يجمع ميزات منصات البيع والتأجير، مع دراسة تحديات تنفيذ بوابات الدفع الإلكتروني.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/hwayjcar/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/hwayjcar/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -336,15 +359,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=7" alt="صورة مشروع صفحة هبوط" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">صفحة هبوط لخدمة رقمية</h3>
-                        <p class="text-gray-300 mb-4 text-sm">صفحة ويب واحدة ترويجية مصممة لعرض خدمات رقمية بأسلوب عصري.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project7-title">صفحة هبوط لخدمة رقمية</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project7-desc">صفحة ويب واحدة ترويجية مصممة لعرض خدمات رقمية بأسلوب عصري.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">Tailwind CSS</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/landing-page/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/landing-page/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -355,15 +378,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=8" alt="صورة مشروع مولد الألوان" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">مولد الألوان</h3>
-                        <p class="text-gray-300 mb-4 text-sm">تطبيق ويب بسيط يولد لوحات ألوان عشوائية ومتناسقة.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project8-title">مولد الألوان</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project8-desc">تطبيق ويب بسيط يولد لوحات ألوان عشوائية ومتناسقة.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/Color-Generator/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/Color-Generator/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -374,15 +397,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=9" alt="صورة مشروع قائمة المهام" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">قائمة المهام (To-Do List)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">تطبيق ويب بسيط لإدارة المهام اليومية باستخدام Local Storage.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project9-title">قائمة المهام (To-Do List)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project9-desc">تطبيق ويب بسيط لإدارة المهام اليومية باستخدام Local Storage.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/To-Do-List/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/To-Do-List/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -393,15 +416,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=10" alt="صورة مشروع محول الوحدات" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">محول الوحدات (Unit Converter)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">أداة ويب لتحويل أكثر من 40 نوعًا من الوحدات المختلفة.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project10-title">محول الوحدات (Unit Converter)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project10-desc">أداة ويب لتحويل أكثر من 40 نوعًا من الوحدات المختلفة.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/Unit-Converter-Tool/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/Unit-Converter-Tool/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -412,9 +435,9 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=11" alt="صورة مشروع منصة المنارة التعليمية" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">منصة المنارة التعليمية (Minassa)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">منصة ويب ديناميكية شاملة لإدارة المحتوى التعليمي للمراحل الدراسية المختلفة. تتضمن لوحة تحكم للمسؤولين ونظام إدارة المستخدمين والمستويات والمواد.</p>
-                        <p class="text-red-400 text-xs mb-4">ملاحظة: هذا المشروع مبني بلغة PHP وقاعدة بيانات MySQL ويتطلب خادم ويب لتشغيله.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project11-title">منصة المنارة التعليمية (Minassa)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project11-desc">منصة ويب ديناميكية شاملة لإدارة المحتوى التعليمي للمراحل الدراسية المختلفة. تتضمن لوحة تحكم للمسؤولين ونظام إدارة المستخدمين والمستويات والمواد.</p>
+                        <p class="text-red-400 text-xs mb-4" data-i18n="project11-note">ملاحظة: هذا المشروع مبني بلغة PHP وقاعدة بيانات MySQL ويتطلب خادم ويب لتشغيله.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">PHP</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">MySQL</span>
@@ -424,7 +447,7 @@
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">UI/UX Design</span>
                         </div>
                         <div class="flex justify-center items-center text-sm space-x-4 rtl:space-x-reverse">
-                            <a href="https://github.com/barayoub2006/minassa.git" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://github.com/barayoub2006/minassa.git" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view-code">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.08-.731.084-.716.084-.716 1.192.085 1.816 1.29 1.816 1.29 1.06 1.814 2.784 1.299 3.45.993.108-.775.418-1.291.76-1.593-2.646-.302-5.424-1.325-5.424-5.926 0-1.31.468-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.783 5.621-5.433 5.917.43.37.823 1.102.823 2.222v3.293c0 .319.192.694.8.576c4.766-1.586 8.204-6.084 8.204-11.386 0-6.627-5.373-12-12-12z"/></svg>
                                 عرض الكود
                             </a>
@@ -435,15 +458,15 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://placehold.co/50x50/3a3a5a/e2e8f0?text=Game" alt="صورة مشروع لعبة ذكية" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">لعبة ذكية (Smart Game)</h3>
-                        <p class="text-gray-300 mb-4 text-sm">لعبة ويب بسيطة وممتعة تعتمد على المنطق.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project12-title">لعبة ذكية (Smart Game)</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project12-desc">لعبة ويب بسيطة وممتعة تعتمد على المنطق.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">CSS</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/game-smart/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/game-smart/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -454,8 +477,8 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop" alt="صورة مشروع تطبيق الطقس" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">تطبيق الطقس</h3>
-                        <p class="text-gray-300 mb-4 text-sm">تطبيق ويب لعرض حالة الطقس لأي مدينة في العالم، مع توقعات لخمسة أيام قادمة.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project13-title">تطبيق الطقس</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project13-desc">تطبيق ويب لعرض حالة الطقس لأي مدينة في العالم، مع توقعات لخمسة أيام قادمة.</p>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">HTML</span>
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">Tailwind CSS</span>
@@ -463,7 +486,7 @@
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">API</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/weather/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/weather/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 عرض
                             </a>
@@ -474,10 +497,10 @@
                 <div class="glassy-card rounded-xl overflow-hidden hover:shadow-xl transition duration-300 relative project-card">
                     <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop" alt="صورة مشروع أداة تحميل الفيديو" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-gray-100">أداة تحميل الفيديو</h3>
-                        <p class="text-gray-300 mb-4 text-sm">أداة لتحميل الفيديوهات من يوتيوب، تيك توك، وغيرها. المشروع يستخدم واجهة أمامية وخادم خلفي.</p>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-100" data-i18n="project14-title">أداة تحميل الفيديو</h3>
+                        <p class="text-gray-300 mb-4 text-sm" data-i18n="project14-desc">أداة لتحميل الفيديوهات من يوتيوب، تيك توك، وغيرها. المشروع يستخدم واجهة أمامية وخادم خلفي.</p>
                         <div class="bg-yellow-900/50 border border-yellow-700 text-yellow-200 text-xs p-2 rounded-lg mb-4">
-                            <p><strong class="font-bold">ملاحظة:</strong> يجب تشغيل الخادم أولاً. اضغط على رابط الخادم وانتظر 30 ثانية، ثم افتح رابط المشروع.</p>
+                            <p data-i18n="project14-note"><strong class="font-bold">ملاحظة:</strong> يجب تشغيل الخادم أولاً. اضغط على رابط الخادم وانتظر 30 ثانية، ثم افتح رابط المشروع.</p>
                             <a href="https://vedio-downloader.onrender.com/" target="_blank" class="text-teal-400 hover:underline mt-1 block">1. اضغط هنا لتشغيل الخادم</a>
                         </div>
                         <div class="flex flex-wrap gap-2 text-xs mb-4">
@@ -487,7 +510,7 @@
                             <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">Node.js</span>
                         </div>
                         <div class="flex justify-center items-center text-sm">
-                            <a href="https://barayoub2006.github.io/vedio-downloader/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center">
+                            <a href="https://barayoub2006.github.io/vedio-downloader/" target="_blank" class="text-teal-400 hover:text-teal-200 font-medium inline-flex items-center" data-i18n="view-project">
                                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
                                 2. عرض المشروع
                             </a>
@@ -497,10 +520,10 @@
 
             </div>
 <div class="flex justify-center mt-12 space-x-4 rtl:space-x-reverse" id="project-buttons">
-    <button id="show-more-btn" class="bg-gray-700 text-white hover:bg-gray-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+    <button id="show-more-btn" class="bg-gray-700 text-white hover:bg-gray-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-i18n="show-more">
         عرض المزيد من المشاريع
     </button>
-    <button id="hide-btn" class="bg-red-700 text-white hover:bg-red-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 hidden">
+    <button id="hide-btn" class="bg-red-700 text-white hover:bg-red-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 hidden" data-i18n="hide-projects">
         إخفاء المشاريع
     </button>
 </div>
@@ -509,25 +532,25 @@
 
     <section id="contact" class="py-16 md:py-24 bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">اتصل بي</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient" data-i18n="contact-title">اتصل بي</h2>
             <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="glassy-card p-8 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-semibold mb-6 text-gray-100">أرسل رسالة</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-100" data-i18n="send-message">أرسل رسالة</h3>
                     <form action="mailto:ayoubbarour2006@gmail.com?subject=رسالة%20من%20موقع%20المحفظة%20الخاص%20بك" method="GET" class="space-y-6">
                         <div>
-                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">اسمك الكامل</label>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1" data-i18n="your-full-name">اسمك الكامل</label>
                             <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm bg-gray-900 text-gray-100" placeholder="أدخل اسمك">
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">بريدك الإلكتروني</label>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1" data-i18n="your-email">بريدك الإلكتروني</label>
                             <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm bg-gray-900 text-gray-100" placeholder="أدخل بريدك الإلكتروني">
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">رسالتك</label>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1" data-i18n="your-message">رسالتك</label>
                             <textarea id="message" name="body" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm bg-gray-900 text-gray-100" placeholder="اكتب رسالتك هنا..."></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-lg font-medium rounded-full text-white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-300 transform hover:scale-105">
+                            <button type="submit" class="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-lg font-medium rounded-full text-white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-300 transform hover:scale-105" data-i18n="send-button">
                                 أرسل الرسالة
                             </button>
                         </div>
@@ -535,7 +558,7 @@
                 </div>
 
                 <div class="glassy-card p-8 rounded-xl shadow-md space-y-6">
-                    <h3 class="text-2xl font-semibold mb-6 text-gray-100">تواصل معي</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-100" data-i18n="connect-with-me">تواصل معي</h3>
                     <div class="flex items-center justify-between bg-gray-900 p-4 rounded-lg">
                         <div class="flex items-center">
                             <svg class="w-6 h-6 text-teal-400 ml-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l-7.997 3.998H2.003V5.884zM12 12l-10-5V3l10 5 10-5v2l-10 5zM22 18.116L14 14.118l7.997-3.998H22v7.998z"/></svg>
@@ -549,7 +572,7 @@
                     <div class="flex items-center justify-between bg-gray-900 p-4 rounded-lg">
                         <div class="flex items-center">
                             <svg class="w-6 h-6 text-teal-400 ml-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            <a href="https://linkedin.com/in/ayoub-barour-a85543341" target="_blank" class="text-gray-300 hover:text-teal-400 transition duration-300">LinkedIn Profile</a>
+                            <a href="https://linkedin.com/in/ayoub-barour-a85543341" target="_blank" class="text-gray-300 hover:text-teal-400 transition duration-300" data-i18n="linkedin-profile">LinkedIn Profile</a>
                         </div>
                         <a href="https://linkedin.com/in/ayoub-barour-a85543341" target="_blank" class="text-gray-400 hover:text-teal-400 transition duration-300">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -559,7 +582,7 @@
                     <div class="flex items-center justify-between bg-gray-900 p-4 rounded-lg">
                         <div class="flex items-center">
                             <svg class="w-6 h-6 text-teal-400 ml-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.08-.731.084-.716.084-.716 1.192.085 1.816 1.29 1.816 1.29 1.06 1.814 2.784 1.299 3.45.993.108-.775.418-1.291.76-1.593-2.646-.302-5.424-1.325-5.424-5.926 0-1.31.468-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.783 5.621-5.433 5.917.43.37.823 1.102.823 2.222v3.293c0 .319.192.694.8.576c4.766-1.586 8.204-6.084 8.204-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            <a href="https://github.com/ayoubbarour" target="_blank" class="text-gray-300 hover:text-teal-400 transition duration-300">GitHub Profile</a>
+                            <a href="https://github.com/ayoubbarour" target="_blank" class="text-gray-300 hover:text-teal-400 transition duration-300" data-i18n="github-profile">GitHub Profile</a>
                         </div>
                         <a href="https://github.com/ayoubbarour" target="_blank" class="text-gray-400 hover:text-teal-400 transition duration-300">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -569,7 +592,7 @@
                     <div class="flex items-center justify-between bg-gray-900 p-4 rounded-lg">
                         <div class="flex items-center">
                             <svg class="w-6 h-6 text-teal-400 ml-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 10l4.552-4.552a1 1 0 011.414 1.414L16.414 11l4.552 4.552a1 1 0 01-1.414 1.414L15 12.414l-4.552 4.552a1 1 0 01-1.414-1.414L13.586 11l-4.552-4.552a1 1 0 011.414-1.414L15 10z"></path></svg>
-                            <a href="cvayoub.docx" download="cvayoub.docx" class="text-gray-300 hover:text-teal-400 transition duration-300">تحميل السيرة الذاتية (DOCX)</a>
+                            <a href="cvayoub.docx" download="cvayoub.docx" class="text-gray-300 hover:text-teal-400 transition duration-300" data-i18n="download-cv-docx">تحميل السيرة الذاتية (DOCX)</a>
                         </div>
                         <a href="cvayoub.docx" download="cvayoub.com" class="text-gray-400 hover:text-teal-400 transition duration-300">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
@@ -578,14 +601,14 @@
                      <div class="bg-gray-900 p-4 rounded-lg text-gray-300 flex items-center justify-between">
                         <p class="flex items-center">
                             <svg class="w-5 h-5 text-teal-400 ml-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.414-1.414L11 11.586V6z" clip-rule="evenodd"></path></svg>
-                            وقت الاستجابة: <span class="font-semibold mr-2">في غضون 24 ساعة</span>
+                            <span data-i18n="response-time">وقت الاستجابة:</span> <span class="font-semibold mr-2" data-i18n="within-24h">في غضون 24 ساعة</span>
                         </p>
                         <p class="flex items-center text-green-400">
                              <span class="relative flex h-3 w-3 mr-1">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                                 <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
-                            متاح لفرص جديدة
+                            <span data-i18n="available-for-new-opportunities">متاح لفرص جديدة</span>
                         </p>
                     </div>
                 </div>
@@ -602,10 +625,11 @@
                 </p>
                 <p class="flex items-center">
                     <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 1114 0V4a1 1 0 10-2 0v.05a5 5 0 00-10 0V4a1 1 0 00-2 0v.05zM10 12a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                    قسنطينة، الجزائر
+                    <span data-i18n="algeria-const">قسنطينة، الجزائر</span>
                 </p>
             </div>
-            <p class="mb-4 text-gray-400">&copy; 2025 أيوب بارور. جميع الحقوق محفوظة.</p>
+
+            <p class="mb-4 text-gray-400" data-i18n="copyright">&copy; 2025 أيوب بارور. جميع الحقوق محفوظة.</p>
             <div class="flex justify-center space-x-6">
                 <a href="https://linkedin.com/in/ayoub-barour-a85543341" target="_blank" class="text-gray-400 hover:text-teal-400 transition duration-300">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -617,8 +641,40 @@
         </div>
     </footer>
     <script src="main.js"></script>
+    <script>
+        // Start of JavaScript for real-time clock
+        
+        // Function to update the real-time clock
+        function updateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+            // Use 'ar-DZ' locale to format the date and time string in Arabic
+            const timeString = now.toLocaleString('ar-DZ', options);
+            document.getElementById('current-time').textContent = timeString;
+        }
+
+        // Initial calls when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Start the real-time clock
+            updateTime();
+            setInterval(updateTime, 1000);
+        });
+        
+        // End of JavaScript for real-time clock
+    </script>
 </body>
 </html>
+
+
 
 
 
